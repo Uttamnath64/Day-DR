@@ -1,0 +1,22 @@
+<resources>
+    <string name="AppName">Day DR</string>
+    <string name="SplashFromName">From Arvo</string>
+
+    <!--  NotesFragment  -->
+    <string name="NotesFragmentSearchHint">Search note</string>
+
+
+    <!--  TasksFragment  -->
+    <string name="TasksFragmentSearchHint">Search task</string>
+
+
+    <!--  TableFragment  -->
+    <string name="TableFragmentSearchHint">Search table</string>
+
+
+    <!--  CreateNote  -->
+    <string name="CreateNoteBtnSave">Save</string>
+    <string name="CreateNoteTxtTitle">Title</string>
+    <string name="CreateNoteTxtText">Text here…</string>
+    <string name="todo">TODO</string>
+</resources>

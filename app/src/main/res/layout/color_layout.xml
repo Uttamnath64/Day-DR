@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:id="@+id/cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    android:layout_margin="7dp"
+    app:cardElevation="2dp"
+    android:background="@drawable/back_round"
+    app:strokeWidth="2dp"
+    android:layout_height="50dp">
+
+</com.google.android.material.card.MaterialCardView>

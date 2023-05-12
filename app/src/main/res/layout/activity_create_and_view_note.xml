@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBackGround"
+    android:transitionName="NoteView"
+    tools:context=".Activity.CreateAndViewNote">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="10dp"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            app:tint="@color/colorBlack_600"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/colorBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/color_icon"
+            app:tint="@color/colorBlack_600"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSave"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/AppColor"
+            android:elevation="1dp"
+            app:cardCornerRadius="20dp"
+            android:clickable="true"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:transitionName="CreateNewNote"
+            app:layout_constraintTop_toTopOf="parent"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/saveBtnText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:text="@string/CreateNoteBtnSave" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayout">
+
+            <EditText
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/CreateNoteTxtTitle"
+                android:inputType="text"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack_900"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/noteData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Sep 10, 2022 12:00 PM | 10 characters"
+                android:textColor="@color/colorBlack_600"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textTitle"/>
+
+            <EditText
+                android:id="@+id/textText"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:lineHeight="25dp"
+                android:hint="@string/CreateNoteTxtText"
+                android:inputType="textMultiLine"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/colorBlack_300"
+                android:textColorHint="@color/colorBlack_900"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/noteData"
+                android:importantForAutofill="no"
+                tools:ignore="UnusedAttribute" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
