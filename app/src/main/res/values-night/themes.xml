@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LitNotes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/AppColor</item>
+        <item name="colorPrimaryVariant">@color/DarkBackColor</item>
+        <item name="colorOnPrimary">@color/DarkBackColor</item>
+        <!-- Secondary brand color. -->
+        <item name="android:statusBarColor">@color/DarkBackColor</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">@color/colorBackGround</item>
+    </style>
+
+    <color name="colorBackGround">@color/DarkBackColor</color>
+
+    <color name="SecondColor">@color/DarkSecondColor</color>
+    <color name="colorBlack">@color/White</color>
+    <color name="colorBlack_300">@color/White_300</color>
+    <color name="colorBlack_600">@color/White_600</color>
+
+    <color name="colorWhite">@color/Black</color>
+    <color name="colorWhite_300">@color/Black_300</color>
+    <color name="colorWhite_600">@color/Black_600</color>
+
+</resources>
